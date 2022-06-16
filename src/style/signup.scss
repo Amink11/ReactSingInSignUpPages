@@ -1,0 +1,17 @@
+@import './src/style.scss';
+
+body {
+    direction: rtl;
+}
+
+// form {
+//     background-color: $form-section-color;
+// }
+
+input {
+    background-color : $input-section-color;
+}
+
+.AlertText {
+    color : $alert-color
+}

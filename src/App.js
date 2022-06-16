@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Signup from "./pages/signup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         "Hello World it's Amin"
-      </header>
+      </header> */}
+      <div className="App-header">
+        <Signup />
+      </div>
     </div>
   );
 }
