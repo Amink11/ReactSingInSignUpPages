@@ -29,7 +29,6 @@ SignUp page
 - used IraninSans as font to make style for fonts
 - The table has Search and Delete option using state
 - sign up fields have manual validation
-- 
 
 ## Getting Started with Create React App
 
