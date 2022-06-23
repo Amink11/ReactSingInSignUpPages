@@ -8,7 +8,7 @@ export default function Navigation() {
       <Container>
         <Nav>
           <Nav.Link href="/">خانه</Nav.Link>
-          <Nav.Link href="/signup">ثبت نام</Nav.Link>
+          <Nav.Link href="/signup-page">ثبت نام</Nav.Link>
           <Nav.Link href="/user-details">لیست کاربران</Nav.Link>
         </Nav>
       </Container>

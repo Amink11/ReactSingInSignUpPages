@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-import "../style/signup.css";
-import { Form, Modal, Button, Container, Row, Col, Card } from "react-bootstrap";
+import {
+  Form,
+  Modal,
+  Button,
+  Container,
+  Row,
+  Col,
+  Card,
+} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 
@@ -124,84 +131,89 @@ export default function Signup() {
     }
   };
 
+  
   return (
     <>
       <Container className="containerStyle">
-      <Row>
-      <Col sm={2} md={2} lg={4}></Col>
+        <Row>
+          <Col sm={2} md={2} lg={4}></Col>
           <Col sm={8} md={8} lg={4}>
-        <Card className="mt-4">
-          <Card.Header>فرم ثبت نام</Card.Header>
-          <Card.Body>
-          <Form
-              onSubmit={handleSignupSubmit}
-              className="py-3 text-center d-inline-block"
-            >
-              <Form.Group className="m-3">
-                <Form.Control
-                  className="inputField"
-                  type="text"
-                  name="firstName"
-                  placeholder="نام"
-                  value={userDetail.firstName}
-                  onChange={handleAddNewSignup}
-                ></Form.Control>
-                <Form.Text className="text-danger">
-                  {firstNameError && (
-                    <span className="position-static">{firstNameError}</span>
-                  )}
-                </Form.Text>
-              </Form.Group>
-              <Form.Group className="m-3">
-                <Form.Control
-                  className="inputField"
-                  type="text"
-                  name="lastName"
-                  placeholder="نام‌خانوادگی"
-                  onChange={handleAddNewSignup}
-                ></Form.Control>
-                <Form.Text className="text-danger">
-                  {lastNameError && (
-                    <span className="position-static">{lastNameError}</span>
-                  )}
-                </Form.Text>
-              </Form.Group>
-              <Form.Group className="m-3">
-                <Form.Control
-                  className="inputField"
-                  type="text"
-                  name="phoneNumber"
-                  placeholder="شماره‌موبایل"
-                  onChange={handleAddNewSignup}
-                ></Form.Control>
-                <Form.Text className="text-danger">
-                  {phoneNumberError && (
-                    <span className="position-static">
-                      {phoneNumberError}
-                    </span>
-                  )}
-                </Form.Text>
-              </Form.Group>
-              <Form.Group className="m-3">
-                <Form.Control
-                  className="inputField"
-                  type="text"
-                  name="nationalId"
-                  placeholder="کد ملی"
-                  onChange={handleAddNewSignup}
-                ></Form.Control>
-                <Form.Text className="text-danger">
-                  {nationalIdError && (
-                    <span className="position-static">{nationalIdError}</span>
-                  )}
-                </Form.Text>
-              </Form.Group>
-              <Button variant="success" type="submit">
-                ثبت
-              </Button>
-            </Form>
-          </Card.Body>
-        </Card>
+            <Card className="mt-4">
+              <Card.Header>فرم ثبت نام</Card.Header>
+              <Card.Body>
+                <Form
+                  onSubmit={handleSignupSubmit}
+                  className="py-3 text-center d-inline-block"
+                >
+                  <Form.Group className="m-3">
+                    <Form.Control
+                      className="inputField"
+                      type="text"
+                      name="firstName"
+                      placeholder="نام"
+                      value={userDetail.firstName}
+                      onChange={handleAddNewSignup}
+                    ></Form.Control>
+                    <Form.Text className="text-danger">
+                      {firstNameError && (
+                        <span className="position-static">
+                          {firstNameError}
+                        </span>
+                      )}
+                    </Form.Text>
+                  </Form.Group>
+                  <Form.Group className="m-3">
+                    <Form.Control
+                      className="inputField"
+                      type="text"
+                      name="lastName"
+                      placeholder="نام‌خانوادگی"
+                      onChange={handleAddNewSignup}
+                    ></Form.Control>
+                    <Form.Text className="text-danger">
+                      {lastNameError && (
+                        <span className="position-static">{lastNameError}</span>
+                      )}
+                    </Form.Text>
+                  </Form.Group>
+                  <Form.Group className="m-3">
+                    <Form.Control
+                      className="inputField"
+                      type="text"
+                      name="phoneNumber"
+                      placeholder="شماره‌موبایل"
+                      onChange={handleAddNewSignup}
+                    ></Form.Control>
+                    <Form.Text className="text-danger">
+                      {phoneNumberError && (
+                        <span className="position-static">
+                          {phoneNumberError}
+                        </span>
+                      )}
+                    </Form.Text>
+                  </Form.Group>
+                  <Form.Group className="m-3">
+                    <Form.Control
+                      className="inputField"
+                      type="text"
+                      name="nationalId"
+                      placeholder="کد ملی"
+                      onChange={handleAddNewSignup}
+                    ></Form.Control>
+                    <Form.Text className="text-danger">
+                      {nationalIdError && (
+                        <span className="position-static">
+                          {nationalIdError}
+                        </span>
+                      )}
+                    </Form.Text>
+                  </Form.Group>
+                  <Button variant="success" type="submit">
+                    ثبت
+                  </Button>
+                </Form>
+              </Card.Body>
+            </Card>
           </Col>
           <Col sm={2} md={2} lg={4}></Col>
         </Row>
