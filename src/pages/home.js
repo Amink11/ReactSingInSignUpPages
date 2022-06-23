@@ -1,5 +1,5 @@
 import React from "react";
-import SignedId from "../components/signIn/signedIng";
+import SignedId from "../components/signIn/signedIn";
 import SignIn from "../components/signIn/signIn";
 
 export default function Home() {

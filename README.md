@@ -10,7 +10,16 @@ SignUp page
 - user-details
 
 #### Project Components
-- SignIn
+###### sign in
+- signIn
+- signedIn
+##### sign up
+- sign up
+
+###### user list
+- userList
+- userNotSignedIn
+##### Navbar
 - Navbar
 
 #### Dependencies
